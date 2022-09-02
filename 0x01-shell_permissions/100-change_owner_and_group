@@ -1,3 +1,2 @@
 #!/bin/bash
-chown -R vincent ./ 
-chgrp -R status ./
+chown -R vincent ./
