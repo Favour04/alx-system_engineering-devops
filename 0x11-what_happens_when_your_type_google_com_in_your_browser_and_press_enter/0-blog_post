@@ -1,0 +1,18 @@
+What happens when you type "google.com" and press Enter ?
+
+When you type "google.com" into your web browser and press enter, it sends a DNS (Domain name systems) request to the DNS Server.
+The DNS Server looks up to its system and return the TCP/IP (Transmission Control Protocol/Internet Protocol) address of "google.com" to your web browser.
+
+Your web browser will send this TCP/IP address to the web sever where the files of this webpage is stored.
+
+The processes bellow happens for the TCP/IP address to route to the web server.
+
+1. The TCP/IP address passes through Firewalls, which is a device that monitor network traffic and checks for security policy.
+
+2. If the webpage is hosted on multiple servers, a load balancer ( A device that control and directs traffic to different web server to prevent one server receiving more traffic than another. It helps ensure traffic run smoothly and quickly) will direct it to one of the server which the web page is being hosted.
+
+When the TCP/IP address finally get to the web server, the server will search for the web file for that address. If the web server uses HTTPS, the web server sends it's SSL (Secure socket Layer) certificate to your web browser, and your web browser verifies the certificate, to establish a secure connection.The web server may also forward the request to an application server for more complex logic and processing such as authentication or database queries. The application sever may also interact with databases to retrieve or update data. After all this, "google.com" will be displayed on your screen.
+All this happens in matter of seconds. #network #database #security #data
+
+* NOTE:
+The "s" in https stands for secure, and it means the request will be encrypted using SSL to protect your data from being intercepted by third-party.
