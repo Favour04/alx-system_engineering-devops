@@ -5,7 +5,7 @@
     find_peak that is
     defined to find
     the peak in a li-
-    st of numbers
+    st of number
 """
 
 
