@@ -1,0 +1,2 @@
+The complexity of my algorith is:
+O(nlog(n))
