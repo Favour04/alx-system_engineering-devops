@@ -11,8 +11,14 @@ def number_of_subscribers(subreddit):
         Function to return number of suscribers
         on a subreddit
     """
+
+    header = {
+                'User-Agent': 'alxapis/1.0'
+    }
     req = urllib.request.Request('https://reddit.com/r/' +
-                                 f'{subreddit}' + '/about.json')
+                                 f'{subreddit}' + '/about.json',
+                                 headers=header)
+
     try:
         with urllib.request.urlopen(req) as response:
             status_code = response.getcode()
