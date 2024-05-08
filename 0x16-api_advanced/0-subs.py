@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-import urllib.request
 import json
-import sys
+import urllib.request
 """
     module contain the function defination
 """
